@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roberta Southwood | Data Scientist</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #61177c;
+      --background: #ffffff;
+      --text: #000000;
+      --gray: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10%;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 10%;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--gray);
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      border: 1px solid #eee;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* TIMELINE */
+    .timeline-item {
+      margin-bottom: 2rem;
+    }
+
+    .timeline-item h4 {
+      color: var(--primary);
+    }
+
+    /* CONTACT */
+    .contact a {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--gray);
+      margin-top: 3rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>Roberta Southwood</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h2>Hello, I'm <span>Roberta Southwood</span></h2>
+    <p>Data Science Master’s student at American University passionate about solving complex, real-world problems through data, modeling, and statistical analysis.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h3 class="section-title">About Me</h3>
+  <p>
+    I am a Data Science Master’s student at American University passionate about using data to solve complex, real-world problems. My work spans predictive modeling, ecosystem analysis, and large-scale computational simulations, with experience in Python, R, and statistical methods. I enjoy translating complex data into meaningful insights that drive understanding and impact.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h3 class="section-title">Technical Skills</h3>
+  <div class="skills-grid">
+    <div class="card">
+      <h4>Programming</h4>
+      <p>Python, R, SQL, MATLAB</p>
+    </div>
+    <div class="card">
+      <h4>Data Science</h4>
+      <p>Pandas, Scikit-learn, Statistical Modeling</p>
+    </div>
+    <div class="card">
+      <h4>Tools</h4>
+      <p>Git, Tableau, Jupyter, APIs, ArcGIS</p>
+    </div>
+    <div class="card">
+      <h4>Other</h4>
+      <p>LaTeX, Microsoft Office, Google Workspace</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h3 class="section-title">Projects</h3>
+  <div class="projects-grid">
+
+    <div class="project">
+      <h4>Predator-Prey Sheaf Modeling</h4>
+      <p>
+        Applied sheaf theory to analyze wolf and moose population dynamics using real-world ecological data. Evaluated model consistency and predictive performance using statistical techniques.
+      </p>
+      <a href="https://github.com/roberta-southwood/moose-wolves-sheaf" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project">
+      <h4>Earthquake Magnitude Analysis</h4>
+      <p>
+        Analyzed 782 global earthquakes (1995–2023), exploring magnitude distributions and alert levels using statistical and visualization techniques.
+      </p>
+      <a href="https://github.com/roberta-southwood/Earthquake_Analysis" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project">
+      <h4>Vigil Protest Analysis</h4>
+      <p>
+        Explored patterns in U.S. vigil protests (2020–2024) using Crowd Counting Consortium data, uncovering insights through data visualization and analysis.
+      </p>
+      <a href="https://github.com/roberta-southwood/Vigil_Analysis" target="_blank">View Project →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h3 class="section-title">Experience</h3>
+
+  <div class="timeline-item">
+    <h4>Graduate Researcher – American University</h4>
+    <p>Aug 2025 – Present</p>
+    <p>Developing predictive models of ecological systems using topological and statistical methods.</p>
+  </div>
+
+  <div class="timeline-item">
+    <h4>Undergraduate Researcher – Virginia Institute of Marine Science</h4>
+    <p>Summer 2024</p>
+    <p>Modeled mercury transport using ROMS and high-performance computing.</p>
+  </div>
+
+  <div class="timeline-item">
+    <h4>Teaching Assistant – Biostatistics</h4>
+    <p>2026 – Present</p>
+    <p>Supporting students in R, data analysis, and statistical reasoning.</p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h3 class="section-title">Contact</h3>
+  <div class="contact">
+    <a href="mailto:robertasouthwood22@gmail.com">Email</a>
+    <a href="https://github.com/roberta-southwood" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/roberta-southwood-326793301/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Roberta Southwood</p>
+</footer>
+
+</body>
+</html>
