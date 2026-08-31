@@ -111,6 +111,45 @@
       color: var(--primary);
     }
 
+    /* ABOUT */ 
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .about-image {
+    flex: 0 0 250px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-image {
+      width: 220px;
+    }
+  }
+
+    
     /* SKILLS */
     .skills-grid {
       display: grid;
